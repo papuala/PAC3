@@ -1,0 +1,471 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+    font-weight: 1 999; 
+}
+
+/* Format general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+body{
+    background-color: #FFF7E8;
+    color:#2A2A2A;
+}
+header div, footer div, .container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px){
+    header div, footer div, .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    header div, footer div, .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    header div, footer div, .container{
+        max-width: 920px;
+    }
+}
+
+/* Estil generals */
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #79BAAB;
+}
+p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+h1, h1 + p {
+    text-align: center;
+}
+h1, h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;;
+    font-weight: 900;
+    margin: 20px 0;
+}
+h3 {
+    font-size: 2.1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+h4, legend, fieldset + label {
+    text-align: left;
+    color: #2A2A2A;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+}
+input {
+    outline:none;
+    border-style: none;
+    width: 100%;
+}
+header li, footer li {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .container h1, h1 + p {
+        text-align: left;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: #FFFFFF;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 0px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.274);
+}
+header img {
+    width: 180px;
+    padding-bottom: 10px;
+}
+header li a {
+    color: #2A2A2A;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header div > a:hover {
+    opacity: 0.7;
+}
+.active {
+    text-decoration: underline dashed #2A2A2A 1px;
+    text-underline-offset: 5px;
+    font-weight: 900;
+}
+.active:hover {
+    text-decoration-color: #79BAAB;
+}
+
+@media (min-width: 576px){
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header img {
+        padding-bottom: 0px;
+    }
+    header li a {
+        padding-right: 0px;
+    }
+}
+
+/* Footer */
+
+
+footer {
+    background-color: #2A2A2A ;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 0;
+}
+footer p, footer a {
+    font-size: 0.8rem;
+}
+span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+hr {
+    margin: 20px 0;
+    border-style: none;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+footer li a {
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+footer a img {
+    height: 30px;
+    background-color: #2A2A2A;
+    margin-top: 10px;
+}
+footer a:hover img {
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+    footer div div {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin: 0;
+    }
+    .left{
+        width: 250px;
+    }
+    .right {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .right div {
+        margin-right: 20px;
+        font-weight: 600;
+    }
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-color: #79BAAB;
+    position: relative;
+    margin-top: 40px;
+}
+.newsletter::after {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/doodle.png);
+    background-size: 300px;
+    opacity: 0.1;
+    position: absolute; 
+    z-index: 1;
+}
+.newsletter .container {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    width: 450px;
+    z-index: 2;
+}
+.newsletter label {
+    display: none;
+}
+.newsletter input {
+    padding: 10px;
+    border-style: none;
+    border-radius: 3px;
+    width: 280px;
+    margin-right: 10px;
+}
+.newsletter button {
+    background-color: #DC4A23;
+    color:#FFFFFF;
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+.newsletter button:hover {
+    background-color: #EB9781;
+}
+
+/* index.html */
+
+section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+section.search {
+    background-image: url(../img/knife-bg.jpg);
+    background-size:cover;
+    padding: 50px 0 90px 0;
+}
+section.search h1 {
+    text-transform: none;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+}
+.search form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search form, div.search {
+    height: 40px;
+    border: 1px solid #79BAAB;
+    background-color:#FFFFFF;
+    border-radius: 3px;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+}
+.search button {
+    padding: 10px;
+}
+.search button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.shop {
+    background-image: url(../img/shop-bg.jpg);
+    background-size:cover;
+    padding: 100px 20px;
+}
+.shop div {
+    background-color: #FFFFFF;
+    padding: 20px 40px 60px 40px;
+}
+.pick-week {
+    text-align: left;
+}
+.pick-week h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+}
+div > a {
+    color:#DC4A23;
+    font-weight: 600;
+}
+div > a:hover {
+    color: #EB9781;
+}
+.pick-week a {
+    color: #79BAAB;
+    border: 1px solid #79BAAB;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    width: fit-content;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+.pick-week a:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-color: #79BAAB;
+}
+
+@media (min-width: 768px) {
+    .shop {
+        padding: 100px 150px;
+    }
+    .shop div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .shop {
+        padding: 100px 200px;
+    }
+    .latest-meals .element-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .pick-week {
+        display: flex;
+    }
+    .pick-week div {
+        width: 50%;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+    .pick-week img {
+        width: 50%;
+    }
+}
+
+/* recipes.html i shop.html */
+
+.main-container {
+    display: flex;
+}
+.element-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.recipe-container {
+    display: flex;
+}
+.form-container {
+    display: none;
+}
+article a:hover img{
+    border: 1px #79BAAB solid;
+}
+article a:hover h4 {
+    color: #79BAAB;
+}
+.page-numbers {
+    text-align: center;
+    margin: 20px 0;
+}
+.page-numbers li {
+    display: inline;
+    padding-left: 5px;
+}
+.page-numbers a{
+    color:#79BAAB;
+    font-weight: 600;
+}
+.page-numbers a:hover {
+    color:#DC4A23;
+}
+.page-numbers .current-page {
+    color: #2A2A2A;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        display: inline-flex;
+        gap: 10px;
+    }
+    .form-container {
+        display: block;
+        min-width: 30%;
+        background-color: #FFFFFF;
+        padding: 10px;
+    }
+    .form-container li {
+        list-style: none;
+    }
+    input[type="checkbox"] {
+        height: 15px;
+        width: 15px;
+    }
+    .form-container li label {
+        padding-left: 10px;
+    }
+    fieldset {
+        border-style: none;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+    div.search {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 992px) {
+    .form-container {
+        min-width: 25%;
+    }
+    .element-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* videos.html */
+
+.video-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.video {
+    background-color: #FFFFFF;
+}
+.iframe {
+    position:relative;
+    padding-bottom:56.25%;
+}
+iframe {
+    width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-width: 0px;
+}
+.video div:not(.iframe) {
+    padding: 15px;
+}
+
+@media (min-width: 576px){
+    .video-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
