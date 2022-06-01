@@ -342,7 +342,7 @@ section.search {
     .shop {
         padding: 100px 200px;
     }
-    .latest-meals {
+    .latest-meals .element-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .pick-week {
