@@ -21,7 +21,7 @@ body{
     font-size: 1rem;
 }
 header div, footer div, .container{
-    max-width: 500px;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -211,14 +211,14 @@ footer img {
 .newsletter input {
     padding: 10px;
     border-radius: 3px;
-    width: 280px;
+    width: 250px;
     margin-right: 10px;
 }
 .newsletter button {
     background-color: #DC4A23;
     color:#FFFFFF;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 10px;
 }
 .newsletter button:hover {
     background-color: #EB9781;
@@ -292,10 +292,6 @@ section.search {
 .shop span {
     background-color:#FFFFFF;
 }
-.shop h2 {
-    margin-left: 70px;
-    margin-right: 70px;
-}
 .shop a {
     color:#DC4A23;
     font-weight: 600;
@@ -336,6 +332,10 @@ section.search {
 @media (min-width: 768px) {
     .shop {
         padding: 100px;
+    }
+    .shop h2 {
+        margin-left: 70px;
+        margin-right: 70px;
     }
 }
 @media (min-width: 992px) {
@@ -429,7 +429,7 @@ article a:hover h4 {
 .page-numbers a:hover {
     color:#DC4A23;
 }
-.current-page {
+.page-numbers .current-page {
     color: #2A2A2A;
     font-weight: 400;
 }
