@@ -259,6 +259,9 @@ section.search {
 .search button:hover {
     opacity: 0.5;
 }
+.latest-meals a {
+    text-align: left;
+}
 .shop {
     background-image: url(../img/shop-bg.jpg);
     background-size:cover;
@@ -439,11 +442,11 @@ article a:hover h4 {
 .video-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 @media (min-width: 768px){
     .video-container {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
     }
 }
 .video {
